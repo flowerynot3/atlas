@@ -1,0 +1,134 @@
+/* sub1-1 */
+body{
+    
+}
+
+#intro{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#intro img{
+    width: 1200px;
+}
+.line2{
+    display: block;
+    border-bottom: 3px solid #f7ab00;
+    width: 1000px;
+    margin-bottom: 40px;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+#banner1{
+   width: 1200px; 
+   margin: 0 auto;
+   margin-bottom: 300px;
+}
+#banner1 img{
+    width: 1200px;
+}
+#banner2{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 400px;
+    margin-top: 400px;
+}
+#banner2 img{
+    width: 1200px;
+}
+
+#main_info{
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 400px;
+}
+#main_info li a{
+    margin-right: 10px;
+    display: block;
+    width: 180px;
+    height: 270px;
+    border: 1px solid #f7ab00;
+    text-align: center;
+    float: left;
+}
+#main_info li a i{
+    display: block;
+    font-size: 64px;
+    margin-top: 20px;
+}
+#main_info li a span{
+    display: block;
+    margin-top: 80px;
+}
+#main_info ul a p{
+ margin-top: 20px;   
+ font-weight: bold;
+}
+
+.sub_main_banner{
+    position: relative;    
+    width: 100%;
+    overflow: hidden;
+}
+.sub_main_banner_box{
+    width: 1200px;
+    height: 245;
+    background: #ccc;
+    background-image: url("http://placeimg.com/1200/245/any");
+    margin: 0 auto;
+}
+
+#main_lnb .active > a{
+    color: #bf2428;
+}
+#main_lnb li a:hover{
+    color: #bf2428;
+}
+#main_lnb{
+    position: absolute;
+    border: 1px solid #f7ab00;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    text-align: center;
+}
+#main_lnb li{
+    display: inline-block;
+}
+#main_lnb li a{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.page_nav{
+    background: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 15px 0;
+}
+
+#main{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#main h2{
+    font-size: 36px;
+    margin-bottom: 5px;
+
+}
+#main > .main_photo{
+    margin-top: 40px;
+}
+
+/* 브레드 크럼브 메뉴 (현재 페이지 위치를 표시) */

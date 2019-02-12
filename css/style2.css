@@ -1,0 +1,324 @@
+/* 기본규격 ㅣㅊ 정리
+page width : 1200px
+main color : #353802d
+sub color : #bf2428 */
+
+@import url('sub.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #35302d;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear : both;
+}
+body{
+    /* 기본폰트 */
+    font-family: 'Nanum Gothic', sans-serif;
+    color : #666; 
+    font-size: 13px;
+}
+#main_header{
+   /* background: #ccc;*/
+    position: relative; /*부모요소 위치 선언*/
+    width: 1200px;
+    height: 163px;
+    margin : 0 auto; /* 가운데 정렬 */
+    text-align: center;
+}
+#main_header > h1{
+    padding: 30px 0; /*수직은 30 수평은 없음*/
+}
+#main_gnb{
+    position: relative;
+    border-top : 1px solid #999;
+    padding-top: 5px;
+    z-index:99 /* 메뉴의 레이어 최상위 */
+}
+/* 단계 메뉴 */
+#main_gnb > .depth1 > li{
+    position: relative;
+    float: left;
+    width: 14.28%; /* 전체를 100%로보고 7개로 나눠야하기때문 */
+    /*border : 1px solid red;*/
+    height: 30px;
+}
+#main_gnb > .depth1 > li > a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+#main_gnb > .depth1 > li > a:hover{
+    border-bottom: 3px solid #a37633
+}
+/* 2단계메뉴*/
+#main_gnb .depth2{
+    position: absolution;
+    background: rgba(200, 200, 200, 0.85);
+    width: 100%;
+    height: 115px;
+    padding: 10px;
+}
+#main_gnb .depth2 > li > a{
+    display: block;
+    padding: 4px 0;
+    font-weight: bold;
+}
+#main_gnb .depth2 > li > a:hover{
+    color : #a37633
+}
+/*메인 비주얼 베너*/
+#main_banner{
+    position: relative;
+    width: 1200px;
+    /*height: 163px;*/
+    margin : 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+}
+/* 움직이는 틀 (roll)*/
+.sliders{
+    width: 300%;
+    margin-left: 0%;
+}
+.sliders img{
+    width: 33.33%; /*슬라이더의 1/3이 되어야하기떄문*/
+    float : left;
+}
+.slider_indicator{
+    margin-top: 20px;
+}
+.slider_indicator li{
+    display: inline-block;
+    margin : 0 3px;
+} 
+.slider_indicator a{
+    display: inline-block;
+    background: #666;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .slider_indicator a .active{
+      background: #444;
+  }
+  #utv{
+    padding-top: 80px;
+    position: relative;
+    width: 1200px;
+    /*height: 163px;*/
+    margin : 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  #news{
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: left;
+      margin-top: 50px;
+  }
+  #news > h2,
+  #foundation > h2,
+  #sns_gallery > h2{
+      font-size: 36px;
+      margin : 30px;
+      color : #444;
+      margin-left: 30px;
+  }
+  #news > h2 > span,
+  #foundation > h2 > span,
+  #sns_gallery > h2 > span{
+      font-size: 24px;
+  }
+  .line{
+    display: block;
+    border : 5px solid #a37633;
+    width: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    
+    
+  }
+  #news > .chickens{
+      margin-left: 10px;
+  }
+ 
+  #news > .news_list{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    padding : 50px 15px 15px 15px;
+    /*border : 1px solid red;*/
+  }
+  #news > .news_list > h3{
+      font-size: 24px;
+      margin-left: 30px;
+      color: #444;
+  }
+  #news > .news_list > h3 > span{
+      float: right;
+    font-size: 15px;
+    margin-top: 10px;
+}
+  #news .line{
+      margin-left: 30px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      
+  }
+  #news .line1{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+  #news > .news_list > ul{
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+      text-align: left;
+  }
+  #news > .news_list > ul:last-child{
+      margin: 0;
+  }
+  #news > .news_list > ul li{
+      line-height: 2.8em;
+      border-bottom: 1px solid #ccc;
+  }
+ 
+  #news > .news_list > ul li > .date{
+      float: right;
+      font-size: 0.87em;
+      color: #999;
+  }
+ 
+
+
+  /* news aside */
+  #news > aside > img{
+      width: 100%;
+  }
+  #news > aside > img:first-child{
+      margin-bottom: 20px;
+  }
+
+  /*foundation 창업안내섹션 */
+  #foundation{
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+      margin-top: 80px;
+      text-align: left;
+  }
+  #foundation .sub_text{
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 40px;
+  }
+  /* 창업안내 - 아이콘 영역 */
+  #foundation .inform_list{
+      overflow: hidden;
+      /*border: 1px solid red;*/
+  }
+  #foundation .inform_list > li{
+      float: left;
+      /*border : 1px solid red;*/
+      margin-right: 20px;
+  }
+  #foundation .inform_list > li > a{
+      display: block;
+      width: 186.666px;
+      height: 175px;
+      border : 3px solid #f7ab00;
+      text-align: center;
+  }
+  /* .fas = 폰트어썸 */ 
+  #foundation .inform_list > li > a > .fas{
+      font-size: 64px;
+      color : #f7ab00;
+      display: block;
+      margin-top: 40px;
+      margin-bottom: 8px;
+  }
+  #foundation .inform_list > li > a > span{
+      font-size: 1.6em;
+      font-weight: bold;
+      color : #f7ab00;
+  }
+  #foundation .inform_list > li:first-child{
+      width: 373.33px; /* 6그리드라 거기에 맞춘것 */
+  }
+  /* 목록 우측마진 제거 */
+  #foundation .inform_list > li:last-child{
+      margin-right: 0;
+  }
+  #foundation .line{
+      margin-top: 40px;
+  }
+
+  /* SNS 이미지영역 */
+  #sns_gallery{
+      width: 1200px;
+      
+     
+      margin: 0 auto;
+      text-align: left;
+      padding-top: 40px;
+      padding-bottom: 60px;
+      overflow: hidden;
+      margin-top: 80px;
+  }
+  #sns_gallery .line{
+      margin-left: 30px;
+  }
+  #sns_photo{
+      width: 1200px;
+      overflow: hidden;
+  }
+  #sns_photo > li {
+      float: left;
+      /* 목록 5x2, 여백 0px */
+      /* 여백 = (칼러수 -1) * 여백 */
+      /* width = (레이아웃 폭 - 여백 / 칼럼개수 */
+      width: 240px;
+      height: 240px;
+  }
+  #sns_photo > li img{
+      width: 240px;
+      display: block;
+  }
+  #main_footer{
+      width: 100%;
+      background: #f7ab00;
+      text-align: center;
+      padding: 80px 0;
+  }
+  #main_footer > h1{
+      margin-bottom: 5px;
+  }
+  #main_footer p,
+  #main_footer address{
+      color : #fff;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.6em;
+      font-weight: bold;
+  }
+  

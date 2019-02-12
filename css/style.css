@@ -1,0 +1,317 @@
+/* 기본폰트 */
+/* 기본 규격및 컬러 
+page width : 1200px
+main color : #35302d
+sub color(point color) : #bf2428*/
+@import url("sub.css")
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #666;
+    font-size: 13px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: #35302d;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear: both;
+}
+
+#main_header{
+    background: #ccc;
+    position: relative;  /* 부모요소 위치선언 */
+    width: 1200px;
+    height: 163px;
+    margin: 0 auto;
+    text-align: center;
+}
+#main_header h1{
+    padding: 30px 0;
+}
+
+#main_gnb{
+    position: relative;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    z-index: 99; 
+    /* z인덱스로 숫자를 크게 하여 잡아줘야함 */
+}
+.depth1{
+}
+/* 1단계 메뉴*/
+#main_gnb > .depth1 > li{
+    position: relative;
+    float: left;
+    width: 14.28%;
+    height: 30px;
+} 
+#main_gnb > .depth1 > li > a{
+    display: block;
+    /* 앵커태그는 보통 블락으로 잡음, 인라인으로 잡으면 빈자리가 생기기때문 */
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#main_gnb > .depth1 > li > a:hover{
+    border-bottom: 3px solid #f00;
+}
+
+/* 2단계 메뉴 */
+#main_gnb .depth2{
+    position: absolute;
+    background: rgba(200, 200, 200, 0.85);
+    width: 100%;
+    height: 115px;
+    padding: 10px;
+}
+#main_gnb .depth2 > li >a{
+    display: block;
+    padding: 4px 0;
+    font-weight: bold;
+
+}
+.depth2 > li > a:hover{
+    color: #bf2428;
+}
+.main_banner{
+    position: relative;
+    width: 1200px;
+    height: 163px;
+    margin: 0 auto;
+    border: 1px solid #f00;
+    text-align: center;
+}
+.slider{
+    width: 100%;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.sliders{
+    width: 300%;
+    margin-left: -100%;
+    position: relative;
+}
+.sliderL{
+    display: block;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #000;
+}
+.sliderR{
+    display: block;
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #f00;
+}
+.sliders img{
+    width: 33.33%;
+    float: left;
+}
+.slider_indicator{
+    margin-top: 20px;
+}
+.slider_indicator li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.slider_indicator a{
+    display: inline-block;
+    background: #999;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.slider_indicator a.active{
+    background: #444;
+}
+
+#news{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 300px;
+}
+
+#news h2 ,
+#foundation > h2,
+#sns_gallery > h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #bf2428;
+}
+
+#news > h2 > span,
+#foundation > h2 >span,
+#sns_gallery > h2 >span{
+    font-size: 24px
+}
+.line{
+    display: block;
+    border-bottom: 3px solid #bf2428;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#news > aside{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+#news > .news_list{
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+    border: 1px solid #f00;
+    padding: 50px 15px 15px 15px ;
+}
+#news > .news_list > h3{
+    font-size: 28px;
+}
+#news .line{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#news > .news_list > ul{
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+#news > .news_list > ul li{
+    line-height: 2.8em;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+#news > .news_list > ul li:last-child{
+    margin: 0;
+}
+#news > .news_list > ul li > .date{
+    float: right;
+    font-size: 0.87em;
+    color: #999;
+}
+
+/* 뉴스 어사이드 */
+#news > aside > img{
+    width: 100%;
+}
+#news > aside >img:first-child{
+    margin-bottom: 20px;
+}
+
+#foundation{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#foundation .sub_text{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#foundation .inform_list{
+    overflow: hidden;
+}
+#foundation .inform_list > li{
+    float: left;
+    margin-right: 20px;
+}
+#foundation .inform_list > li >a{
+    display: block;
+    width: 186.66px;
+    height: 175px;
+    border: 3px solid #bf2428;
+    text-align: center;
+}
+#foundation .inform_list > li >a > .fas{
+    font-size: 64px;
+    color: #bf2428;
+    display: block;
+    margin-top: 40px;    
+    margin-bottom: 8px;
+}
+#foundation .inform_list > li >a > span{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #bf2428;
+}
+/* 창업문의 배너 */
+#foundation .inform_list > li:first-child{
+    width: 373.33px;
+}
+#foundation .inform_list > li:last-child{
+    margin-right: 0px;
+}
+
+#foundation .line{
+    margin-top: 40px;
+}
+/* sns 갤러리 섹션 */
+
+#sns_gallery{
+    width: 1200px;
+    margin: 0 auto;
+    background: #f2f2f4;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+}
+
+#sns_photo{
+    width: 1200px;
+    overflow: hidden;
+}
+#sns_photo li{
+    float: left;
+    /* 목록 5*2 여백 0 px */
+    /* 여백 = 칼럼수 * 여백  */
+    /* width  = 레이아웃폭/칼럼갯수 */
+    height: 240px;
+    width: 240px;
+}
+
+#sns_photo >li img{
+    width: 240px;
+    display: block;
+}
+
+#main_footer{
+    width: 100%;
+    background: #bf2428;
+    text-align: center;
+    padding: 80px;
+}
+#main_footer > h1{
+    margin-bottom: 5px;
+}
+#main_footer p,
+#main_footer address{
+    color: #fff;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.6em;
+    font-weight: bold;
+}
